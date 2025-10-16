@@ -53,7 +53,9 @@
       "router": {},
       "eas": {
         "projectId": "ee6749d1-4061-4f9f-84a1-fb7f42e04cd7"
-      }
+      },
+      "API_URL": "https://dev-api.example.com",
+      "ENV_NAME": "development"
     },
     "owner": "amawilmada"
   }
