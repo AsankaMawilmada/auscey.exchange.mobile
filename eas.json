@@ -6,13 +6,25 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "ENV_NAME": "development",
+        "API_URL": "https://emonitor-staging.ausceyexchange.com.au/api/"
+      }
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "ENV_NAME": "staging",
+        "API_URL": "https://emonitor-preprod.ausceyexchange.com.au/api/"
+      }
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "ENV_NAME": "production",
+        "API_URL": "https://emonitor.ausceyexchange.com.au/api/"
+      }
     }
   },
   "submit": {
